@@ -138,9 +138,9 @@ class StockDetail {
             } else {
                 newmonth = "\(month - 1)"
             }
-            if month == 3 {
+            if monthType == 1 {
                 newday = "\(28-(8-day))"
-            } else if (month == 1 || month == 5 || month == 7 || month == 9 || month == 11) {
+            } else if monthType == 2 {
                 newday = "\(30-(8-day))"
             } else {
                 newday = "\(31-(8-day))"

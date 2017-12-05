@@ -15,6 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var initialPriceLabel: UILabel!
     @IBOutlet weak var currentPriceLabel: UILabel!
     @IBOutlet weak var whatIfLabel: UILabel!
+    @IBOutlet weak var percentChangeLabel: UILabel!
+    @IBOutlet weak var lossGainLabel: UILabel!
     
     var stockDetail = StockDetail()
     var activityIndicator = UIActivityIndicatorView()
@@ -34,6 +36,7 @@ class DetailViewController: UIViewController {
             self.activityIndicator.stopAnimating()
             UIApplication.shared.endIgnoringInteractionEvents()
         }
+        
     }
     
     func updateUserInterface() {
@@ -42,6 +45,9 @@ class DetailViewController: UIViewController {
         let shares = 1000/(stockDetail.initialPrice)
         let whatIf = shares * stockDetail.currentPrice
         whatIfLabel.text = "$" + String(format: "%.2f", whatIf)
+        let change = stockDetail.currentPrice - stockDetail.initialPrice
+        percentChangeLabel.text = String(format: "%.2f", ((change/stockDetail.initialPrice)*100)) + "%"
+        lossGainLabel.text = String(format: "%.2f", (whatIf - 1000))
     }
     
     func setUpActivityIndicator(){
