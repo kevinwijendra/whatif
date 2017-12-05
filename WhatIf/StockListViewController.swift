@@ -35,6 +35,9 @@ class StockListViewController: UIViewController {
             if let selectedRow = tableView.indexPathForSelectedRow?.row {
                 destination.stockDetail.stockSymbol = stocks[selectedRow]
             }
+            if let selectedPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: selectedPath, animated: false)
+            }
         }
     }
     
