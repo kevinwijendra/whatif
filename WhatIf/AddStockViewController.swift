@@ -15,9 +15,14 @@ class AddStockViewController: UIViewController {
     
     var stockSymbol: String!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addStockTextField.becomeFirstResponder()
+        saveBarButton.isEnabled = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,6 +31,13 @@ class AddStockViewController: UIViewController {
         }
     }
     
+    @IBAction func addStockTextFieldChanged(_ sender: UITextField) {
+        if addStockTextField.text != "" {
+            saveBarButton.isEnabled = true
+        } else {
+            saveBarButton.isEnabled = false
+        }
+    }
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         let isPresentingInAddMode = presentingViewController is UINavigationController

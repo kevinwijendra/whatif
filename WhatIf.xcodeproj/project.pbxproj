@@ -10,8 +10,9 @@
 		4D5C69F31FD6FE540045EB68 /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C69F21FD6FE540045EB68 /* StockDetail.swift */; };
 		4D5C69F51FD6FF750045EB68 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C69F41FD6FF750045EB68 /* DetailViewController.swift */; };
 		4D5C69F71FD705E30045EB68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C69F61FD705E30045EB68 /* Constants.swift */; };
+		4D5C69F91FD71D0E0045EB68 /* UINavigationController+preferredStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C69F81FD71D0E0045EB68 /* UINavigationController+preferredStatusBarStyle.swift */; };
+		4D5C69FB1FD71D370045EB68 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C69FA1FD71D370045EB68 /* AboutViewController.swift */; };
 		4DAD26781FD6F2AF00E436F1 /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD26771FD6F2AF00E436F1 /* AddStockViewController.swift */; };
-		4DAD267A1FD6FB2A00E436F1 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD26791FD6FB2A00E436F1 /* Stocks.swift */; };
 		4DF5D7151FD6EAF800BFE7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5D7141FD6EAF800BFE7A6 /* AppDelegate.swift */; };
 		4DF5D71A1FD6EAF800BFE7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5D7181FD6EAF800BFE7A6 /* Main.storyboard */; };
 		4DF5D71C1FD6EAF900BFE7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5D71B1FD6EAF900BFE7A6 /* Assets.xcassets */; };
@@ -43,8 +44,9 @@
 		4D5C69F21FD6FE540045EB68 /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
 		4D5C69F41FD6FF750045EB68 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4D5C69F61FD705E30045EB68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D5C69F81FD71D0E0045EB68 /* UINavigationController+preferredStatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+preferredStatusBarStyle.swift"; sourceTree = "<group>"; };
+		4D5C69FA1FD71D370045EB68 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4DAD26771FD6F2AF00E436F1 /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
-		4DAD26791FD6FB2A00E436F1 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		4DF5D7111FD6EAF800BFE7A6 /* WhatIf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF5D7141FD6EAF800BFE7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF5D7191FD6EAF800BFE7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,11 +118,12 @@
 			children = (
 				4DF5D7141FD6EAF800BFE7A6 /* AppDelegate.swift */,
 				4D5C69F61FD705E30045EB68 /* Constants.swift */,
-				4DAD26791FD6FB2A00E436F1 /* Stocks.swift */,
 				4D5C69F21FD6FE540045EB68 /* StockDetail.swift */,
 				4DF5D7421FD6EC1800BFE7A6 /* StockListViewController.swift */,
 				4DAD26771FD6F2AF00E436F1 /* AddStockViewController.swift */,
 				4D5C69F41FD6FF750045EB68 /* DetailViewController.swift */,
+				4D5C69FA1FD71D370045EB68 /* AboutViewController.swift */,
+				4D5C69F81FD71D0E0045EB68 /* UINavigationController+preferredStatusBarStyle.swift */,
 				4DF5D7181FD6EAF800BFE7A6 /* Main.storyboard */,
 				4DF5D71B1FD6EAF900BFE7A6 /* Assets.xcassets */,
 				4DF5D71D1FD6EAF900BFE7A6 /* LaunchScreen.storyboard */,
@@ -361,8 +364,9 @@
 				4DF5D7151FD6EAF800BFE7A6 /* AppDelegate.swift in Sources */,
 				4DF5D7431FD6EC1800BFE7A6 /* StockListViewController.swift in Sources */,
 				4D5C69F51FD6FF750045EB68 /* DetailViewController.swift in Sources */,
+				4D5C69F91FD71D0E0045EB68 /* UINavigationController+preferredStatusBarStyle.swift in Sources */,
 				4D5C69F71FD705E30045EB68 /* Constants.swift in Sources */,
-				4DAD267A1FD6FB2A00E436F1 /* Stocks.swift in Sources */,
+				4D5C69FB1FD71D370045EB68 /* AboutViewController.swift in Sources */,
 				4DAD26781FD6F2AF00E436F1 /* AddStockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,11 @@ class DetailViewController: UIViewController {
     
     var stockDetail = StockDetail()
     var activityIndicator = UIActivityIndicatorView()
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         stockSymbolLabel.text = stockDetail.stockSymbol
